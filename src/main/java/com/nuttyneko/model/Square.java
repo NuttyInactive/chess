@@ -60,9 +60,8 @@ public class Square
 		if (!Character.isDigit(name.charAt(1)))
 			throw new IllegalArgumentException("Second character is not a digit: " + name.charAt(1));
 		
-		name = name.toLowerCase();
-		rank = name.charAt(0) - 'a';
-		file = name.charAt(1) - '0' - 1;
+		rank = name.toLowerCase().charAt(0) - 'a';
+		file = name.toLowerCase().charAt(1) - '0' - 1;
 	}
 	
 	/**
