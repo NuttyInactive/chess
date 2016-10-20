@@ -42,7 +42,8 @@ public class SquareTest
 	@Test(expected = IllegalArgumentException.class)
 	public void testConstructor_invalidArgument_3()
 	{
-        new Square("â1");
+		// "â1"
+        new Square("\u00E21");
     }
 	
 	@Test(expected = IllegalArgumentException.class)
